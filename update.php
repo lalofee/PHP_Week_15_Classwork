@@ -107,6 +107,15 @@ if($_GET['id']) {
 
             <tr>
 
+                <th>Active</th>
+
+                <td><input type="text" name="active" placeholder="Activ" value="<?php echo $data['active'] ?>" /></td>
+
+            </tr>
+
+
+            <tr>
+
                 <input type="hidden" name="id" value="<?php echo $data['id']?>" />
 
                 <td><button type="submit">Save Changes</button></td>

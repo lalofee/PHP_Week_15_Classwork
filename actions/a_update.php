@@ -15,13 +15,15 @@ if($_POST) {
 
     $dob = $_POST['date_of_birth'];
 
+    $act = $_POST['active'];
+
  
 
     $id = $_POST['id'];
 
  
 
-    $sql = "UPDATE user SET first_name = '$fname', last_name = '$lname', date_of_birth = '$dob' WHERE id = {$id}";
+    $sql = "UPDATE user SET first_name = '$fname', last_name = '$lname', date_of_birth = '$dob', active = '$act' WHERE id = {$id}";
 
     if($connect->query($sql) === TRUE) {
 
